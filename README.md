@@ -33,7 +33,7 @@ python run_seq2seq.py --model_name_or_path experiment_decsion_at_decoder_feat_ex
 
 # Results
 ![Table 1.](https://github.com/anonymous12-lab/seq-to-seq-decision-aware-mrg/blob/main/evaluate_R_C.png)
-Table 1. Are results with respect to F1 score and overall accuracy for decision prediction, where S → sentiment and H → uncertainty score.
+Table 1. Are results with respect to F1 score for the both the labels and overall accuracy for decision prediction, where S → sentiment and H → uncertainty score.
 
 ![Table 2.](https://github.com/anonymous12-lab/seq-to-seq-decision-aware-mrg/blob/main/evaluate_Seq.png)
-Model scores for automatic evaluation metrics. The output is the average of all the scores in the test set. R and P refers to recall and precision.
+Table 2. Are the scores for automatic evaluation metrics for seq-to-seq. The output is the average of all the scores in the test set. R and P refers to recall and precision.
