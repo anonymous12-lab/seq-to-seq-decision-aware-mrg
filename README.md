@@ -1,5 +1,8 @@
 ## Paper Title: Towards Automated Meta Review Generation via an NLP/ML Pipeline in Different Stages of the Scholarly Peer Review Process
 
+## Contributing
+This repo contains training and prediction code for the recommendation scores and confidence scores for the reviews, using which we then predict the decision on a particular manuscript. Finally, we utilize the decision signals for generating the meta-reviews using a [transformer-based seq2seq architecture](https://arxiv.org/abs/1706.03762).
+
 ## Installation Packages
 
 ```bash
@@ -8,9 +11,6 @@ pip install pytorch
 pip install sklearn
 pip install numpy
 ```
-
-## Contributing
-This repo contains training and prediction code for the recommendation scores and confidence scores for the reviews, using which we then predict the decision on a particular manuscript. Finally, we utilize the decision signals for generating the meta-reviews using a [transformer-based seq2seq architecture](https://arxiv.org/abs/1706.03762).
 
 Figure 1. Detailed architecture for recommendation score and confidence score prediction
 
@@ -30,3 +30,10 @@ Test:
 ```
 python run_seq2seq.py --model_name_or_path experiment_decsion_at_decoder_feat_ext/ --do_train False --do_eval False --task summarization --train_file peer_data/feat_decoder/mrg_data_with_feat/test.csv --validation_file peer_data/feat_decoder/mrg_data_with_feat/validation.csv --output_dir experiment_decsion_at_decoder_feat_ext/checkpoint-674322 --decision_label decision --feat_index feat_index --overwrite_output_dir --per_device_train_batch_size=16 --per_device_eval_batch_size=1 --predict_with_generate --summary_column metareview --do_predict True
 ```
+
+# Results
+![Table 1.](https://github.com/anonymous12-lab/seq-to-seq-decision-aware-mrg/blob/main/evaluate_R_C.png)
+Table 1. Are results with respect to F1 score and overall accuracy for decision prediction, where S → sentiment and H → uncertainty score.
+
+![Table 2.](https://github.com/anonymous12-lab/seq-to-seq-decision-aware-mrg/blob/main/evaluate_Seq.png)
+Model scores for automatic evaluation metrics. The output is the average of all the scores in the test set. R and P refers to recall and precision.
