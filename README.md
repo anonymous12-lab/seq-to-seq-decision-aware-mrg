@@ -12,9 +12,14 @@ pip install numpy
 ## Contributing
 This repo contains training and prediction code for the recommendation scores and confidence scores for the reviews, using which we then predict the decision on a particular manuscript. Finally, we utilize the decision signals for generating the meta-reviews using a [transformer-based seq2seq architecture](https://arxiv.org/abs/1706.03762).
 
-Figure 1. Below Digram is the detailed architecture for decision prediction. Here R refers to the predicted recommendation scores and C refer to the predicted confidence scores. Three encoders act as feature extractors that map the input vector(for 3 reviews) to a high-level representation. With this representation, the decoder recursively predicts the sequence one at a time auto-regressively.
+Figure 1. Detailed architecture for recommendation score and confidence score prediction
 
-![Figure 1.](https://github.com/anonymous12-lab/seq-to-seq-decision-aware-mrg/blob/main/fig.png)
+![Figure 1.](https://github.com/anonymous12-lab/seq-to-seq-decision-aware-mrg/blob/main/recommendation_confidence_pred.png)
+
+
+Figure 2. Below Digram is the detailed architecture for decision prediction. Here R refers to the predicted recommendation scores and C refer to the predicted confidence scores. Three encoders act as feature extractors that map the input vector(for 3 reviews) to a high-level representation. With this representation, the decoder recursively predicts the sequence one at a time auto-regressively.
+
+![Figure 2.](https://github.com/anonymous12-lab/seq-to-seq-decision-aware-mrg/blob/main/fig.png)
 
 
 Train:
