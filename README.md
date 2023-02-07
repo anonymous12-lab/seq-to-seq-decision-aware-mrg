@@ -1,5 +1,8 @@
 # seq-to-seq-decision-aware-mrg
 
+# Paper Title
+## Towards Automated Meta Review Generation via an NLP/ML Pipeline in Different Stages of the Scholarly Peer Review Process
+
 ![alt text](https://github.com/anonymous12-lab/seq-to-seq-decision-aware-mrg/blob/main/fig.png)
 
 Train:
