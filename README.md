@@ -14,7 +14,7 @@ This repo contains training and prediction code for the recommendation scores an
 
 ![alt text](https://github.com/anonymous12-lab/seq-to-seq-decision-aware-mrg/blob/main/fig.png)
 
-Above Digram is the detailed architecture for decision prediction. Here rating here refers to the predicted recommendation scores and Confidence scores refer to the predicted confidence scores.
+Above Digram is the detailed architecture for decision prediction. Here R refers to the predicted recommendation scores and C refer to the predicted confidence scores.
 
 Train:
 ```
