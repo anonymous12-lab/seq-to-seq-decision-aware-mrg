@@ -39,5 +39,7 @@ Table 1. Are results with respect to F1 score for the both the labels and overal
 Table 2. Are the scores for automatic evaluation metrics for seq-to-seq. The output is the average of all the scores in the test set. R and P refers to recall and precision.
 
 ### Next Update/Work:
-Adding the Dataset for all differnet Task.
+
+Adding the Dataset for all four differnet Tasks.
+
 As our immediate next step, we would like to deeply investigate fine-tuning of the specific sub-tasks, use the final-layer representations of the sub-tasks instead of the predictions, and perform a sensitivity analysis of each sub-task on the main task. Additionally, we would like to incorporate more finegrained decisions such as strong/weak accept/reject or minor/major revisions instead of binary decisions.
