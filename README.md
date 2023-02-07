@@ -1,7 +1,7 @@
 ## Paper Title:
 ## Towards Automated Meta Review Generation via an NLP/ML Pipeline in Different Stages of the Scholarly Peer Review Process
 
-## Installation
+## Installation Packages
 
 ```bash
 pip install transformers
@@ -9,6 +9,9 @@ pip install pytorch
 pip install sklearn
 pip install numpy
 ```
+
+## Contributing
+This repo contains training and prediction code for the recommendation scores and confidence scores for the reviews, using which we then predict the decision on a particular manuscript. Finally, we utilize the decision signals for generating the meta-reviews using a ![transformer-based seq2seq architecture](https://arxiv.org/abs/1706.03762).
 
 ![alt text](https://github.com/anonymous12-lab/seq-to-seq-decision-aware-mrg/blob/main/fig.png)
 
